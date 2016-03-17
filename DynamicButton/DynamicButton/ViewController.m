@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "DynamicButtonView.h"
 
-@interface ViewController ()
+
+@interface ViewController ()<DynamicButtonViewDataDelegate,DynamicButtonViewDataSource>
+
+@property (nonatomic, strong) NSMutableArray * dataList;
 
 @end
 
@@ -16,12 +20,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self customView];
+    self.dataList = [[NSMutableArray alloc]initWithObjects:@"nihao",@"buhao",@"henhao", nil];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)customView{
+    DynamicButtonView * view = [[DynamicButtonView alloc]initWithFrame:CGRectMake(100, 100, 0, 0)];
+    view.delegate = self;
+    view.datasource = self;
+    [view configWithButtonArray:@[@"nihao",@"buhao",@"henhao"]];
+    [self.view addSubview:view];
 }
+
+-(NSInteger)heightForRowsInDynamicView:(DynamicButtonView *)dynamicButtonView{
+    return 100;
+}
+
+-(NSInteger)widthForRowInDynamicView:(DynamicButtonView *)dynmaicButtonView{
+    return 200;
+}
+
+-(NSInteger)numberOfRowsInDynamicView:(DynamicButtonView *)dynamicButtonView{
+    return self.dataList.count;
+}
+
 
 @end
