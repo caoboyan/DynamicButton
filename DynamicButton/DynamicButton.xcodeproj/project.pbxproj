@@ -15,6 +15,7 @@
 		04A461141C9AB713005B565C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A461121C9AB713005B565C /* LaunchScreen.storyboard */; };
 		04A4611F1C9AB713005B565C /* DynamicButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A4611E1C9AB713005B565C /* DynamicButtonTests.m */; };
 		04A4612A1C9AB714005B565C /* DynamicButtonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A461291C9AB714005B565C /* DynamicButtonUITests.m */; };
+		04A461391C9AB78D005B565C /* DynamicButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A461381C9AB78D005B565C /* DynamicButtonView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		04A461251C9AB714005B565C /* DynamicButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A461291C9AB714005B565C /* DynamicButtonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicButtonUITests.m; sourceTree = "<group>"; };
 		04A4612B1C9AB714005B565C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A461371C9AB78D005B565C /* DynamicButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicButtonView.h; sourceTree = "<group>"; };
+		04A461381C9AB78D005B565C /* DynamicButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicButtonView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				04A461121C9AB713005B565C /* LaunchScreen.storyboard */,
 				04A461151C9AB713005B565C /* Info.plist */,
 				04A461041C9AB713005B565C /* Supporting Files */,
+				04A461371C9AB78D005B565C /* DynamicButtonView.h */,
+				04A461381C9AB78D005B565C /* DynamicButtonView.m */,
 			);
 			path = DynamicButton;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 			files = (
 				04A4610C1C9AB713005B565C /* ViewController.m in Sources */,
 				04A461091C9AB713005B565C /* AppDelegate.m in Sources */,
+				04A461391C9AB78D005B565C /* DynamicButtonView.m in Sources */,
 				04A461061C9AB713005B565C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
